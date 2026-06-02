@@ -10,15 +10,12 @@ Game ini mengimplementasikan konsep Object Oriented Programming (OOP), sprite ma
 
 ## 👥 Anggota Kelompok
 
-| Nama | NRP/NIM |
+| Nama | NIM |
 |--------|--------|
 | Christian Rafael H.S | 25051204110 |
-| Anggota 2 | - |
+| Daffa Suryana Ramadhani | 25051204222 |
 | Anggota 3 | - |
 
-> Sesuaikan dengan anggota kelompok yang sebenarnya.
-
----
 
 ## ✨ Fitur Utama
 
