@@ -313,7 +313,7 @@ class Tentara(pygame.sprite.Sprite):
             self.move_counter += 1
             #update ai vision musuh
             self.vision.center = (self.rect.centerx + 75 * self.arah, self.rect.centery)
-            pygame.draw.rect(screen,RED, self.vision)
+            
 
             if self.move_counter > TILE_SIZE:
                 self.arah *= -1
@@ -337,7 +337,8 @@ class Tentara(pygame.sprite.Sprite):
             
         if seLf.frame_index >= len(seLf.animation_list[seLf.action]):
             if seLf.action == 3:
-                seLf.frame_index = len(seLf.animation_list[seLf.action]) - 1
+                seLf.kill()
+                return
             else:
                 seLf.frame_index = 0
             
@@ -353,8 +354,9 @@ class Tentara(pygame.sprite.Sprite):
         if seLf.health <= 0:
             seLf.health = 0
             seLf.speed = 0
-            seLf.alive = False
-            seLf.update_action(3) #mati  
+            if seLf.alive:
+                seLf.alive = False
+                seLf.update_action(3) #mati  
         
     def draw(seLf):
         screen.blit(pygame.transform.flip(seLf.image, seLf.flip, False), seLf.rect)
