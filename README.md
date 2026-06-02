@@ -15,7 +15,7 @@ Game ini mengimplementasikan konsep Object Oriented Programming (OOP), sprite ma
 | Christian Rafael H.S | 25051204110 |
 | Daffa Suryana Ramadhani | 25051204222 |
 | Afrian Syauqi Al Hilmani | 25051204242 |
-
+| Mohammad Reyhan Herwansa | 25051204235 |
 
 ## ✨ Fitur Utama
 
